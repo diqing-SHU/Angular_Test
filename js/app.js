@@ -13,6 +13,10 @@ myApp.config(['$routeProvider', function($routeProvider){
         templateUrl: 'partials/details.html',
         controller: 'DetailsController'
     }).
+    when('/expandable',{
+        templateUrl: 'partials/expandable.html',
+        controller: 'ExpandableController'
+    }).
     otherwise({ 
         redirectTo: '/list'
     });

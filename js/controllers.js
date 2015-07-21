@@ -32,3 +32,22 @@ artistControllers.controller('DetailsController', ['$scope','$http','$routeParam
         }
     });
 }]);
+
+artistControllers.controller ('ExpandableController', function ($scope) {
+    var theOption = [
+        {
+            show: false
+        },
+        {
+            show: false
+        },
+        {
+            show: false
+        }
+    ];
+    $scope.option  = theOption;
+    $scope.expand = function(theOption) {
+       theOption.show = !theOption.show;
+}
+    
+});
